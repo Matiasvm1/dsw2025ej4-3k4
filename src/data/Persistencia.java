@@ -46,8 +46,9 @@ public class Persistencia {
     public static void inicializar() throws InvalidPropertiesFormatException{
         inicializarEspecies();
         inicializarSectores();
-        inicializarAnimales();
         inicializarPaises();
+        inicializarAnimales();
+       
     }
 
     public static ArrayList<Mamifero> getAnimales() {
