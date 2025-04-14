@@ -73,4 +73,16 @@ public class Persistencia {
         }
         return total;
     }
+     public static void AddAnimal(Mamifero mamifero){
+        animales.add(mamifero);
+    }
+     public static Sector getSectorPorNum(int numero){
+       Sector sectorSelec = new Sector();
+        for(Sector sector:sectores){
+            if(sector.getNumero() == numero){
+                sectorSelec = sector;
+            }
+        }
+        return sectorSelec;
+    }
 }
